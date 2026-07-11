@@ -123,6 +123,7 @@ All measures below are written as DAX formulas — none of the reported values a
 | Total Sales (USD) | **$167.57K** |
 | Total Sales (CAD) | **$224.21K** |
 | Gross Profit Margin (USD, Year Total) | **14.7%** |
+
 ![tab1-sales and gpm](screenshots/salesandgpm.png)
 
 ### Tab 2 — Product Mix
@@ -136,9 +137,9 @@ A matrix ranking product **type** (Keg, Six-Pack, etc.) by **profitability per s
 ### Tab 4 — SO2: Seasonality *(Stand-Out)*
 A matrix with product name as rows and **calendar month** as columns, using the custom `Servings Sold` measure to fairly compare true sales volume across differently-sized products.
 ![tab4-seasonality](screenshots/seasonality.png)
-**Finding:** While most SSBC products sell consistently month over month, the **Imperial Poet Porter** shows clear seasonality — sales climb from **September through January** and taper off again by **March**, consistent with a winter/holiday seasonal beer pattern.
 
-📷 
+
+
 
 ---
 
