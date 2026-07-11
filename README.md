@@ -179,6 +179,7 @@ This project reflects the core workflow expected in a **Data Analyst / BI Analys
 ## 📬 Contact
 
 **[Eboni Brown]**
+
 [[LinkedIn](https://www.linkedin.com/in/ebonilbrown/)] · [ebonibrown2017@gmail.com] 
 
 *Feel free to reach out with questions about the modeling decisions, DAX logic, or to discuss the project further.*
