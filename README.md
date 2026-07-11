@@ -42,13 +42,13 @@ This project takes that raw data from **source files → cleaned & modeled data 
 The model follows a **star schema**: one central fact table surrounded by four dimension tables, each joined in a one-to-many relationship (dimension → fact).
 
 ```
-        Dim_Currency        Dim_Date
+        dim_customer        dim_date
               \                /
                \              /
-              Fact_Sales (the "many" side)
+              fact_monthlysales (the "many" side)
                /              \
               /                \
-        Dim_Customer       Dim_Product
+        dim_products       dim_exchange_rate
 ```
 
 **Fact table:** `Fact_Sales` — transactional sales data (units, product, customer, date, currency)
