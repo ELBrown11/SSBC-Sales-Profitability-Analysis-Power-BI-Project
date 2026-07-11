@@ -147,7 +147,8 @@ A matrix with product name as rows and **calendar month** as columns, using the 
 
 ```
 ├── README.md
-├── SSBC_Sales_Analysis.pbix
+├── EboniBrown -SSBC.pbix
+├── /Monthly Sales Logs
 ├── /screenshots
 │   ├── model-view.png
 │   ├── power-query-editor.png
