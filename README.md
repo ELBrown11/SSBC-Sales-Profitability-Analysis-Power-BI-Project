@@ -61,7 +61,7 @@ The model follows a **star schema**: one central fact table surrounded by four d
 
 All relationships are one-to-many with a single active cross-filter direction from each dimension into the fact table — the standard, most efficient pattern for report performance and measure accuracy.
 
-📷 *[Insert screenshot: Model view showing relationships]*
+![data model](screenshots/model-view.png)
 
 ---
 
@@ -74,7 +74,7 @@ Key transformation work performed in the Power Query Editor before data ever rea
 - **Removed blank/error rows** that would have broken relationship keys or skewed totals
 - **Renamed and reordered columns** for clarity and consistent naming conventions across the model
 
-📷 *[Insert screenshot: Power Query Editor showing an applied steps pane]*
+
 
 ### Custom Date Table
 
@@ -87,7 +87,7 @@ The table includes:
 
 This was a deliberate design choice: many stakeholders review performance by fiscal quarter, not calendar quarter, so the reporting layer needed both perspectives available.
 
-📷 *[Insert screenshot: M code for the date table]*
+
 
 ---
 
@@ -106,7 +106,7 @@ All measures below are written as DAX formulas — none of the reported values a
 | `Profitability per Serving` | *(Stand-out measure)* Gross profit normalized per single serving, enabling fair comparison across pack formats (Keg vs. Six-pack vs. Single) |
 | `Servings Sold` | *(Stand-out measure)* Standardizes unit sales into serving-equivalent volume, accounting for different container sizes, to accurately compare true consumption volume across product types |
 
-📷 *[Insert screenshot: DAX formula view / measures list in the model]*
+
 
 ---
 
