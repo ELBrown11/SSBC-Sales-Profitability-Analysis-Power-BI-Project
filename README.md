@@ -123,21 +123,22 @@ All measures below are written as DAX formulas — none of the reported values a
 | Total Sales (USD) | **$167.57K** |
 | Total Sales (CAD) | **$224.21K** |
 | Gross Profit Margin (USD, Year Total) | **14.7%** |
+![tab1-sales and gpm](screenshots/salesandgpm.png)
 
 ### Tab 2 — Product Mix
 A simple table showing each SSBC beer's **% of total sales** and **% of total gross profit**, both columns summing to 100% — used to identify which products punch above their weight in profitability versus volume.
-
+![tab2-gross profit and unit sales](screenshots/grossprofitandunitsales.png)
 ### Tab 3 — SO1: Product Type *(Stand-Out)*
 A matrix ranking product **type** (Keg, Six-Pack, etc.) by **profitability per serving**, using the custom `Profitability per Serving` measure.
 
 **Finding:** *[Summarize which product type won — e.g., "Kegs generate the highest profit per serving, despite lower unit sales, because of reduced packaging cost per serving relative to six-packs."]*
-
+![tab3-product type](screenshots/producttype.png)
 ### Tab 4 — SO2: Seasonality *(Stand-Out)*
 A matrix with product name as rows and **calendar month** as columns, using the custom `Servings Sold` measure to fairly compare true sales volume across differently-sized products.
-
+![tab4-seasonality](screenshots/seasonality.png)
 **Finding:** While most SSBC products sell consistently month over month, the **Imperial Poet Porter** shows clear seasonality — sales climb from **September through January** and taper off again by **March**, consistent with a winter/holiday seasonal beer pattern.
 
-📷 *[Insert screenshots: All four report tabs]*
+📷 
 
 ---
 
@@ -149,11 +150,14 @@ A matrix with product name as rows and **calendar month** as columns, using the 
 ├── /screenshots
 │   ├── model-view.png
 │   ├── power-query-editor.png
-│   ├── tab1-executive-summary.png
-│   ├── tab2-product-mix.png
-│   ├── tab3-so1-product-type.png
-│   └── tab4-so2-seasonality.png
-└── /source-data (if shareable — otherwise note as excluded for confidentiality)
+│   ├── producttype.png
+│   ├── grossprofitandunitsales.png
+│   ├── seasonality.png
+│   └── salesandgpm.png
+└── CFO Metrics Tracker.xlsx
+├── Customer List (as of FY2021).txt
+├── SSBC Product Offerings.pdf
+├── USD-CAD Exchange Rates.csv 
 ```
 
 ---
