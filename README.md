@@ -51,13 +51,13 @@ The model follows a **star schema**: one central fact table surrounded by four d
         dim_products       dim_exchange_rate
 ```
 
-**Fact table:** `Fact_Sales` — transactional sales data (units, product, customer, date, currency)
-
+**Fact table:** `fact_monthlysales` — transactional sales data (units, product, customer, date, currency) Monthly Sales Logs folder containing monthly xlsx files
+ 
 **Dimension tables:**
-- `Dim_Currency` — sourced and cleaned from the currency source file
-- `Dim_Customer` — sourced and cleaned from the customer source file
-- `Dim_Product` — sourced and cleaned from the product source file
-- `Dim_Date` — **custom-built in Power Query** (see below), not from a source file
+- `dim_exchange_rate` — sourced and cleaned from `USD-CAD Exchange Rates.csv` file
+- `dim_customer` — sourced and cleaned from the `Customer List (as of FY2021).txt` file
+- `dim_products` — sourced and cleaned from the `SSBC Product Offerings.pdf` file
+- `dim_date` — **custom-built in Power Query** (see below), not from a source file
 
 All relationships are one-to-many with a single active cross-filter direction from each dimension into the fact table — the standard, most efficient pattern for report performance and measure accuracy.
 
